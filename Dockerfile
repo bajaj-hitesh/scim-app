@@ -22,6 +22,7 @@ RUN npm install
 
 
 COPY src /scim_app
+RUN chmod -R 777 /scim_app
 
 # create logs directory
 RUN mkdir ./logs
