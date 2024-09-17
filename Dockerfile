@@ -23,12 +23,9 @@ RUN npm install
 
 COPY src /scim_app
 
-RUN chmod -R 777 /scim_app
+RUN mkdir -p /scim_app/logs && chmod -R 777 /scim_app
 
 RUN chmod -R 777 /opt/app-root/src
-
-# create logs directory
-RUN mkdir ./logs
 
 EXPOSE 443
 
