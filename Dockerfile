@@ -18,8 +18,9 @@ RUN npm install -g pm2@3.0.3 \
   && pm2 set pm2-logrotate:retain 10 \
   && pm2 set pm2-logrotate:rotateInterval '0 0 1 1 0'
 
-RUN npm install
+RUN mkdir -p /scim_app/logs && chmod -R 777 /scim_app
 
+RUN npm install
 
 COPY src /scim_app
 
