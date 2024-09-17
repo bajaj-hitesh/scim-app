@@ -33,9 +33,9 @@ db.sequelize.sync().then(()=>{
     console.log('failed to create tables : ',ex)
 });
 
-const msvcPort = '443';
-const key = scimAppSvc.sslConfig.key
-const cert = scimAppSvc.sslConfig.cert
+const msvcPort = '460';
+const key = "./src/certs/server.key"
+const cert =  "./src/certs/server.crt"
 const password = 'password';
 
 server = require('https').createServer({
