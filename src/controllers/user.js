@@ -12,7 +12,7 @@ exports.create = async(req, res, next) => {
   try {
     const { userName, emails,name } = req.body;
     const email = emails[0].value;
-    const displayName = name?.givenName || userName ;
+    const displayName = userName ;
 
     const newUser = await User.create({ userName, displayName, email });
 
