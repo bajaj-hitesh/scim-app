@@ -33,7 +33,7 @@ db.sequelize.sync().then(()=>{
     console.log('failed to create tables : ',ex)
 });
 
-const msvcPort = '460';
+const msvcPort = '443';
 const key = "./src/certs/server.key"
 const cert =  "./src/certs/server.crt"
 const password = 'password';
