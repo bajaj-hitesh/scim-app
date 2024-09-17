@@ -15,7 +15,7 @@
     "express-basic-auth": "^1.2.1",
     "pg": "^8.6.0",
     "pg-hstore": "^2.3.3",
-    "sequelize": "^6.5.0",
+    "sequelize": "^6.37.3",
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {
