@@ -10,7 +10,7 @@ RUN npm cache clear --force
 
 # install pm2 (approved versions)
 RUN npm install -g pm2@5.4.2 \
-  && pm2 install pm2-logrotate@2.7.0 \
+  && pm2 install pm2-logrotate@2.6.0 \
   && pm2 set pm2-logrotate:max_size 100M \
   && pm2 set pm2-logrotate:retain 10 \
   && pm2 set pm2-logrotate:rotateInterval '0 0 1 1 0'
