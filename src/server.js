@@ -34,8 +34,8 @@ db.sequelize.sync().then(()=>{
 });
 
 const msvcPort = '443';
-const key = "./src/certs/server.key"
-const cert =  "./src/certs/server.crt"
+const key = "./certs/server.key"
+const cert =  "./certs/server.crt"
 const password = 'password';
 
 server = require('https').createServer({
