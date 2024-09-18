@@ -1,6 +1,6 @@
 
 
-let instances = 5;
+let instances = 1;
 module.exports = {
   apps: [{
     // general
