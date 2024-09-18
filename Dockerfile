@@ -7,9 +7,7 @@ WORKDIR /scim_app
 
 COPY ./package.json .
 
-RUN npm cache clear --force && \
-  yum install -y --nodocs python2 && \
-	npm config set python "python2" 
+RUN npm cache clear --force
 
 # install pm2 (approved versions)
 RUN npm install -g pm2@3.0.3 \
