@@ -9,6 +9,9 @@ const { UniqueConstraintError } = require("sequelize");
 
 // Create and Save a new User
 exports.create = async(req, res, next) => {
+
+  console.log(`create user request received`);
+
   try {
     const { userName, emails,name } = req.body;
     const email = emails[0].value;
@@ -158,6 +161,8 @@ exports.deleteOne = async(req, res, next) => {
 
 exports.recon = async (req, res, next) => {
   try {
+    console.log(`get users recon request received`);
+
     const startIndex = parseInt(req.query.startIndex) || 1;
     const count = parseInt(req.query.count) || 10;
 
